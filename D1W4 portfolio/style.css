@@ -1,0 +1,84 @@
+body {
+    background-color: #011c27;
+}
+#intro {
+    color: white;
+    height: 100vh;
+    border: 1px;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#intro h1 {
+    font-family: sans-serif;
+    font-size: 96px;
+    animation: fadein ease-in 1s;
+}
+
+#intro code {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    animation-name: fadein;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@media only screen and (max-width: 600px) {
+    #intro h1 {
+        font-size: 48px;
+    }
+
+    #intro code {
+        font-size: 16px;
+    }
+}
+#arrowdown {
+    font-size: 75px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 37.5px);
+}
+#about {
+    color: white;
+    background: red;
+    padding: 30px;
+}
+#contact {
+    color: white;
+    background: green;
+    padding: 30px;
+    a {
+        color: white;
+    }
+}
+input,
+textarea {
+    padding: 10px;
+    width: 100%;
+}
+
+#portfolio {
+    background-color: lightblue;
+    padding: 30px;
+}
+footer {
+    padding: 30px;
+    background: black;
+    color: white;
+}
+
+section {
+    box-shadow: -10px 0px 25px;
+    color: black;
+}
+.row {
+    margin-bottom: 15px;
+}
